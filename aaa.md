@@ -29,8 +29,7 @@
 
 五级流水线数据通路：
 
-![]([images\media\image1.png](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image1.png)){width="5.768055555555556in"
-height="3.2534722222222223in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image1.png)
 
 设计思路：将CPU工作分为五个阶段：取指；读寄存器/处理立即数/指令译码；运算；读写内存/处理跳转；写寄存器。
 
@@ -40,8 +39,7 @@ CPU中所使用的各种器件尽可能来自之前五次实验，所以控制�
 
 控制器：
 
-![](images\media\image2.png){width="5.760416666666667in"
-height="2.03125in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image2.png)
 
 在ID阶段译码（包括ALU功能码在内），使用级间寄存器将控制信号传递下去，各阶段取用各自阶段所需的控制信号。
 
@@ -87,8 +85,7 @@ RegDst：选择寄存器写的地址来源，是指令15-11位还是20-16位，�
 
 存储器：指令存储器按字存储，数据存储器按字节存储。其中数据存储器为4x4片1k字节的子存储器构成，根据控制信号决定启用一片（4个选择）、两片（2个选择）或四片，对应存取字节、半字和字。取数的有符号扩展或无符号扩展也集成在数据存储器中。
 
-![](images\media\image3.png){width="5.762863079615048in"
-height="5.395833333333333in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image3.png)
 
 加法溢出的处理：对于add、sub、addi，因本CPU未设计中断，所以对溢出的响应设计为结果不写入寄存器。另外溢出判断为：先行进位加法器中向最高位的进位和溢出位不同，则为真正的溢出。
 
@@ -162,13 +159,11 @@ lw \$t6,8(\$t1)
 
 MARS模拟器：
 
-![](images\media\image4.png){width="2.077458442694663in"
-height="5.708333333333333in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image4.png)
 
 仿真：
 
-![](images\media\image5.png){width="1.6409722222222223in"
-height="5.654083552055993in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image5.png)
 
 r型指令测试：
 
@@ -262,13 +257,11 @@ srlv \$t7,\$t7,\$a1
 
 MARS模拟器：
 
-![](images\media\image6.png){width="1.632075678040245in"
-height="4.385099518810149in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image6.png)
 
 仿真：
 
-![](images\media\image7.png){width="1.3679254155730534in"
-height="4.381283902012249in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image7.png)
 
 i型指令测试：
 
@@ -310,13 +303,11 @@ sltiu \$t7,\$k0,3688
 
 MARS模拟器：
 
-![](images\media\image8.png){width="2.283333333333333in"
-height="6.368055555555555in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image8.png)
 
 仿真：
 
-![](images\media\image9.png){width="1.8074103237095362in"
-height="6.386792432195976in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image9.png)
 
 溢出测试，以addi为例：
 
@@ -338,13 +329,11 @@ addi \$k1,\$k0,-1
 
 MARS模拟器（发生了中断）：
 
-![](images\media\image10.png){width="2.3541666666666665in"
-height="0.9270833333333334in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image10.png)
 
 仿真：
 
-![](images\media\image11.png){width="2.128824365704287in"
-height="1.0520833333333333in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image11.png)
 
 可见k1都没有写入数据。
 
@@ -468,21 +457,16 @@ af4e0001
 
 MARS模拟器：
 
-![](images\media\image12.png){width="2.3680555555555554in"
-height="6.386805555555555in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image12.png)
 
-![](images\media\image13.png){width="6.178850612423447in"
-height="1.7916666666666667in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image13.png)
 
-![](images\media\image13.png){width="5.729166666666667in"
-height="1.7535870516185477in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image16.png)
 
 仿真（数据存储器取低八位部分具有特点的内容）：
 
-![](images\media\image14.png){width="2.09375in"
-height="7.398625328083989in"}
-![](images\media\image15.png){width="2.0833333333333335in"
-height="7.3618121172353455in"}
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image14.png)
+![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image15.png)
 
 **五、调试和心得体会**
 
