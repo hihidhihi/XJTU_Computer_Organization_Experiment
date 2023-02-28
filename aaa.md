@@ -29,7 +29,7 @@
 
 五级流水线数据通路：
 
-![](images\media\image1.png){width="5.768055555555556in"
+![]([images\media\image1.png](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image1.png)){width="5.768055555555556in"
 height="3.2534722222222223in"}
 
 设计思路：将CPU工作分为五个阶段：取指；读寄存器/处理立即数/指令译码；运算；读写内存/处理跳转；写寄存器。
