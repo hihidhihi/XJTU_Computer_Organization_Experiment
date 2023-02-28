@@ -461,8 +461,6 @@ MARS模拟器：
 
 ![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image13.png)
 
-![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image16.png)
-
 仿真（数据存储器取低八位部分具有特点的内容）：
 
 ![](https://github.com/hihidhihi/XJTU_Computer_Organization_Experiment/blob/main/images/media/image14.png)
